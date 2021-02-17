@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7w118aBHL4whe0XSflmPQBDg5KMaOqhCnhIp5Ny+XNlFu9JqVZHO8jCGxQkyff3jm7gS/+3YNSvjI8hV/tO1zw==",
+  "success": true,
+  "projectFilePath": "/Users/manucheremeh/Desktop/Traveltour/Traveltour.csproj",
+  "expectedPackageFiles": [
+    "/Users/manucheremeh/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/manucheremeh/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/manucheremeh/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/manucheremeh/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/manucheremeh/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/manucheremeh/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
