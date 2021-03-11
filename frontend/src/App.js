@@ -1,8 +1,14 @@
 import logo from './logo.svg';
+import React from 'react';
+import { store } from './actions/store';
 import './App.css';
+import { Provider } from 'react-redux';
 
 function App() {
   return (
+    <Provider store = {store}>
+      
+    </Provider>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
