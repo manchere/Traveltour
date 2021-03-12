@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/manucheremeh/Desktop/Traveltour/backend/Traveltour.csproj": {}
+    "/Users/manucheremeh/Desktop/Traveltour/Traveltour/Traveltour.csproj": {}
   },
   "projects": {
-    "/Users/manucheremeh/Desktop/Traveltour/backend/Traveltour.csproj": {
+    "/Users/manucheremeh/Desktop/Traveltour/Traveltour/Traveltour.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/manucheremeh/Desktop/Traveltour/backend/Traveltour.csproj",
+        "projectUniqueName": "/Users/manucheremeh/Desktop/Traveltour/Traveltour/Traveltour.csproj",
         "projectName": "Traveltour",
-        "projectPath": "/Users/manucheremeh/Desktop/Traveltour/backend/Traveltour.csproj",
+        "projectPath": "/Users/manucheremeh/Desktop/Traveltour/Traveltour/Traveltour.csproj",
         "packagesPath": "/Users/manucheremeh/.nuget/packages/",
-        "outputPath": "/Users/manucheremeh/Desktop/Traveltour/backend/obj/",
+        "outputPath": "/Users/manucheremeh/Desktop/Traveltour/Traveltour/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/manucheremeh/.nuget/NuGet/NuGet.Config"
@@ -45,6 +45,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.3, )"
             },

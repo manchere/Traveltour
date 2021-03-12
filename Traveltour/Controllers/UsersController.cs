@@ -9,8 +9,9 @@ using Traveltour.Data;
 
 namespace Traveltour.Controllers
 {
+    
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class UsersController : ControllerBase
     {
         private readonly TraveltourDBContext _context;
@@ -20,8 +21,8 @@ namespace Traveltour.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public IEnumerable<User> Get_by()
+        [HttpGet("{id}")]
+        public IEnumerable<User> Get_by(int id)
         {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new User
@@ -37,7 +38,7 @@ namespace Traveltour.Controllers
             return await _context.Users.ToListAsync();
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
             var user = await _context.Users.FindAsync(id);

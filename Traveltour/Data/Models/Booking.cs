@@ -22,6 +22,9 @@ namespace Traveltour.Data
         [Column(TypeName = "nvarchar(50)")]
         public string BookingStatus { get; set; }
 
+        [Column(TypeName = "decimal")]
+        public decimal Price { get; set; }
+
         [Column(TypeName = "int")]
         public int UserId  { get; set; }
 

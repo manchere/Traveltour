@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
-using Traveltour.Data;
 
-namespace Traveltour.Services
+
+namespace Traveltour.Data.services
 {
     public interface ITripService
     {

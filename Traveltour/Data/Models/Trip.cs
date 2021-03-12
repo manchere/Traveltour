@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.Design;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-
+using System.Text.Json.Serialization;
 
 namespace Traveltour.Data
 {
@@ -22,11 +22,17 @@ namespace Traveltour.Data
 
         [Column(TypeName = "nvarchar(50)")]
         public string Description { get; set; }
-
+       
         [Column(TypeName = "nvarchar(50)")]
         public string Location { get; set; }
 
         [Column(TypeName = "int")]
         public int TourId { get; set; }
+        
+        [Column(TypeName = "int")]
+        public int BookingId { get; set; }
+
+        [JsonIgnore]
+        public virtual User User { get; set; }
     }
 }

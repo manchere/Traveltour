@@ -1,12 +1,13 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
-using Traveltour.Services;
 using Traveltour.Data;
+using Traveltour.Data.services;
 
 namespace Trips.Controllers
 {
     [Route("api/[controller]")]
-    public class TripsController: Controller
+    [ApiController]
+    public class TripsController: ControllerBase
     {
         private ITripService _service;
         public TripsController(ITripService service)

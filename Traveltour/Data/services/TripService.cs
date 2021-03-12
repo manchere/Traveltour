@@ -1,15 +1,9 @@
 using System.Collections.Generic;
-using Traveltour.Data;
-using System.Linq;
-using Traveltour.Services;
 
-
-
-namespace Traveltour.Data
+namespace Traveltour.Data.services
 {
     public class TripService : ITripService
     { 
-        public List<Trip> GetAllTrips() => Data.TraveltourDBContext();
        
         public void AddTrip(Trip trip)
         {
@@ -22,17 +16,18 @@ namespace Traveltour.Data
 
         public void UpdateTrip(int tripId, Trip trip)
         {
-
+        
         }
         public Trip GetTripById(int tripId)
         {
-
+            Trip first  = new Trip();
+            first.Description = "all";
+            return first;
         }
 
         public List<Trip> GetAllTrips()
         {
-            
+            throw new System.NotImplementedException();
         }
-
     }
 } 

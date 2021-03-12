@@ -1,7 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Text.Json.Serialization;
 
 namespace Traveltour.Data
 {
@@ -9,7 +10,9 @@ namespace Traveltour.Data
     {
         [Key]
         public int Id { get; set; }
+
         [Column(TypeName = "nvarchar(50)")]
+        public string Email { get; set; }
         public string Firstname { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
@@ -26,5 +29,8 @@ namespace Traveltour.Data
 
         [Column(TypeName = "datetime")]
         public DateTime DOB { get; set; }
+
+        [JsonIgnore]
+        public virtual List<Booking> Bookings { get; set; }
     }
 }
