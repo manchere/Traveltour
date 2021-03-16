@@ -11,6 +11,7 @@ namespace Traveltour.Data
         public int Id { get; set; }
 
         [Column(TypeName = "datetime")]
+        [Required]
         public DateTime DateOfBooking { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]

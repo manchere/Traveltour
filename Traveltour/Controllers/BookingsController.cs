@@ -28,10 +28,10 @@ namespace Bookings.Controller
         public async Task<IActionResult> GetAllBookings([FromQuery] BookingQueryParameters queryParameters)
         {
             IQueryable<Booking> bookings = _context.Bookings;
-
+            
             if (queryParameters.MinPrice != null && queryParameters.MaxPrice != null)
             {
-                bookings = bookings.Where(b => b.Price >= queryParameters.MinPrice.Value && b.Price <= queryParameters.MaxPrice.Value);
+                bookings = bookings.Where(b => b.Price >= queryParameters.MinPrice.Value &&  b.Price <= queryParameters.MaxPrice.Value);
             }
 
             if (!string.IsNullOrEmpty(queryParameters.BookingType))
