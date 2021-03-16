@@ -95,6 +95,29 @@ namespace Traveltour.Controllers
             return user;
         }
 
+        [HttpPost]
+        [Route("Delete")]
+        public async Task<ActionResult<User>> DeleteUsers(int[] ids)
+        {
+            List<User> users = new List<User>();
+            var user = new User();
+            foreach (var id in ids)
+            {
+                user = await _context.Users.FindAsync(id);
+                if(!UserExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    users.Add(user);    
+                }
+                await _context.SaveChangesAsync();   
+            }
+            _context.RemoveRange(users);
+            return user;
+        }
+
         private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.Id == id);

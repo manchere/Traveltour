@@ -28,5 +28,10 @@ namespace Traveltour.Data.services
         {
             throw new System.NotImplementedException();
         }
+
+        public void DeleteUsers(int[] ids)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

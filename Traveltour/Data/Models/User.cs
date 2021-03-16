@@ -12,7 +12,10 @@ namespace Traveltour.Data
         public int Id { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
+        [Required]
         public string Email { get; set; }
+
+        [Column(TypeName = "nvarchar(50)")]
         public string Firstname { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
